@@ -1,51 +1,106 @@
-/* Base styles for the table */
-.table-container {
-  background-color: #333; /* Dark background */
-  color: #fff; /* White text color */
-  font-family: Arial, sans-serif; /* Font style */
-  border-spacing: 0;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-/* Header styles */
-.table-header {
-  background-color: #444; /* Slightly lighter than the table background for the header */
-  text-align: left;
-  padding: 8px 16px;
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  font-family: sans-serif;
   font-size: 16px;
-  border-bottom: 1px solid #555; /* Border to separate headers */
+  z-index: 2;
+
+  /* Add customization here  */
 }
 
-/* Row styles */
-.table-row {
-  border-bottom: 1px solid #555; /* Border to separate rows */
+#tooltip.hidden {
+  display: none;
+
+  /* Add customization here  */
 }
 
-/* Cell styles */
-.table-cell {
-  padding: 12px 16px;
-  font-size: 14px;
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+
+  /* Add customization here  */
 }
 
-/* Highlighted cells for ranks and values */
-.rank-cell, .value-cell {
+.reportTable {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+  border-spacing: 3px;
+
+  /* Add customization here  */
+}
+
+.reportTable th {
+  color: #000000;
+  border: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc !important;
+  /* font-size: 10px;  */
+  /* height: 25px; */
+  padding: 5px;
+
+  /* Add customization here  */
+}
+
+.reportTable td {
+  color: #000000;
+  vertical-align: super;
+  padding: 5px;
+  /*background: #FFFFFF;*/
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+
+  /* Add customization here  */
+}
+
+.left {
+  text-align: left;
+
+  /* Add customization here  */
+}
+
+.right {
+  text-align: right !important;
+
+  /* Add customization here  */
+}
+
+.indent {
+  padding-left: 15px !important;
+
+  /* Add customization here  */
+}
+
+.subtotal {
+  font-style: italic;
   font-weight: bold;
+  background: #d3d3d3;
+
+  /* Add customization here  */
 }
 
-/* Total row style */
-.total-row {
-  font-weight: bold;
-  background-color: #444; /* Slightly lighter to distinguish the total row */
+.total {
+  border-top: 2px solid #000000 !important;
+  font-weight: bold !important;
+
+  /* Add customization here  */
 }
 
-/* Total cell style */
-.total-cell {
-  padding: 12px 16px;
-  font-size: 14px;
-}
+.total.transposed {
+  border-top: 0px !important;
+  background: #d3d3d3;
 
-/* You can add media queries if you need responsiveness */
-@media (max-width: 768px) {
-  /* Adjust table styles for smaller screens */
+  /* Add customization here  */
 }
