@@ -1,0 +1,51 @@
+/* Base styles for the table */
+.table-container {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text color */
+  font-family: Arial, sans-serif; /* Font style */
+  border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header styles */
+.table-header {
+  background-color: #444; /* Slightly lighter than the table background for the header */
+  text-align: left;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-bottom: 1px solid #555; /* Border to separate headers */
+}
+
+/* Row styles */
+.table-row {
+  border-bottom: 1px solid #555; /* Border to separate rows */
+}
+
+/* Cell styles */
+.table-cell {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+/* Highlighted cells for ranks and values */
+.rank-cell, .value-cell {
+  font-weight: bold;
+}
+
+/* Total row style */
+.total-row {
+  font-weight: bold;
+  background-color: #444; /* Slightly lighter to distinguish the total row */
+}
+
+/* Total cell style */
+.total-cell {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+/* You can add media queries if you need responsiveness */
+@media (max-width: 768px) {
+  /* Adjust table styles for smaller screens */
+}
