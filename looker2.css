@@ -1,28 +1,30 @@
 .reportTable {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 12px; /* Default font size for the table */
   width: 100%; /* Ensures the table uses full available width */
   border-collapse: separate; /* Ensures borders do not collapse */
-  border-spacing: 0 10px; /* Adds spacing between rows/cards */
+  border-spacing: 0 16px; /* Increased space between rows/cards */
 }
 
+/* Default style for all rows */
 .reportTable tr {
-  /* Default shadow for all rows except the first three */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px; /* Rounds the corners */
-  margin: 10px 0; /* Adds vertical space between cards */
 }
 
-/* Specific shadow for the first three rows */
+/* Style for the top three rows */
 .reportTable tr:nth-child(1),
 .reportTable tr:nth-child(2),
 .reportTable tr:nth-child(3) {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+  font-size: 14px; /* Slightly larger font size */
+  font-weight: bold; /* Bolder font */
+  margin: 20px 0; /* Increased top and bottom margins */
 }
 
 .reportTable td, .reportTable th {
   border: none; /* Removes any borders */
-  padding: 20px; /* Adds padding inside the cell */
+  padding: 20px; /* Padding inside the cell */
   text-align: left; /* Aligns text to the left for all cells */
 }
 
@@ -30,7 +32,6 @@
   padding: 24px 20px; /* Increased padding for the header */
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
-  font-weight: bold; /* Makes the header text bold */
   background-color: #f9f9f9; /* Light grey background for header */
 }
 
@@ -43,6 +44,7 @@
   background-color: #ffffff; /* White for even rows */
 }
 
+/* Left and right alignment for text in the cells, if needed */
 .reportTable .left {
   text-align: left;
 }
@@ -51,6 +53,7 @@
   text-align: right;
 }
 
+/* Styles for emphasized rows */
 .subtotal, .total {
   font-style: italic;
   font-weight: bold;
