@@ -14,15 +14,9 @@
 
 /* Style for the first row with a specific background color */
 .reportTable tr:first-child {
-  background-color: #DEF1F7; /* Light brand color for the background */
+  background-color: #DEF1F7; /* Light blue brand color for the background */
   font-size: 14px; /* Slightly larger font size */
   font-weight: 500; /* Medium bold font */
-  margin: 20px 0; /* Increased top and bottom margins */
-}
-
-/* Resetting the shadow for the header, if it's a separate row */
-.reportTable tr.header-row {
-  box-shadow: none; /* No shadow for the header row */
 }
 
 .reportTable td, .reportTable th {
