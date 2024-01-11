@@ -12,14 +12,13 @@
   border-radius: 8px; /* Rounds the corners */
 }
 
-/* Style for the top three rows */
-.reportTable tr:nth-child(1),
-.reportTable tr:nth-child(2),
-.reportTable tr:nth-child(3) {
+/* Style for the first row only */
+.reportTable tr:nth-child(1) {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
   font-size: 14px; /* Slightly larger font size */
-  font-weight: 500; /* Bolder font */
+  font-weight: 500; /* Medium bold font */
   margin: 20px 0; /* Increased top and bottom margins */
+  background-color: #fff9db; /* Light yellow background for the top row */
 }
 
 .reportTable td, .reportTable th {
@@ -32,7 +31,7 @@
   padding: 28px 20px; /* Increased padding for the header */
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
-  background-color: #ffffff; /* Light grey background for header */
+  background-color: #ffffff; /* White background for header */
 }
 
 /* Alternating background colors for rows */
@@ -44,13 +43,13 @@
   background-color: #ffffff; /* White for even rows */
 }
 
-/* Left and right alignment for text in the cells, if needed */
+/* Left and right alignment for text in the cells */
 .reportTable .left {
   text-align: left;
 }
 
 .reportTable .right {
-  text-align: center;
+  text-align: center; /* Centers the text */
 }
 
 /* Styles for emphasized rows */
