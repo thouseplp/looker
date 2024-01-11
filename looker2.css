@@ -8,16 +8,21 @@
 
 /* Default style for all rows */
 .reportTable tr {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Default shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Standard shadow for all rows */
   border-radius: 8px; /* Rounds the corners */
 }
 
-/* Style for the first row only with brand color shadow */
+/* Style for the first row with a specific background color */
 .reportTable tr:first-child {
-  box-shadow: 0 0 15px #4AC1E0; /* Brand color shadow */
+  background-color: #DEF1F7; /* Light brand color for the background */
   font-size: 14px; /* Slightly larger font size */
   font-weight: 500; /* Medium bold font */
   margin: 20px 0; /* Increased top and bottom margins */
+}
+
+/* Resetting the shadow for the header, if it's a separate row */
+.reportTable tr.header-row {
+  box-shadow: none; /* No shadow for the header row */
 }
 
 .reportTable td, .reportTable th {
@@ -31,6 +36,7 @@
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
   background-color: #ffffff; /* White background for header */
+  box-shadow: none; /* Ensuring the header has no shadow */
 }
 
 /* Alternating background colors for rows */
