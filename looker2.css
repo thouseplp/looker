@@ -7,9 +7,17 @@
 }
 
 .reportTable tr {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  /* Default shadow for all rows except the first three */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px; /* Rounds the corners */
   margin: 10px 0; /* Adds vertical space between cards */
+}
+
+/* Specific shadow for the first three rows */
+.reportTable tr:nth-child(1),
+.reportTable tr:nth-child(2),
+.reportTable tr:nth-child(3) {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
 }
 
 .reportTable td, .reportTable th {
