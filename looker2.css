@@ -18,7 +18,7 @@
 .reportTable tr:nth-child(3) {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
   font-size: 14px; /* Slightly larger font size */
-  font-weight: bold; /* Bolder font */
+  font-weight: 600; /* Bolder font */
   margin: 20px 0; /* Increased top and bottom margins */
 }
 
