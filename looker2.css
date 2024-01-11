@@ -6,9 +6,7 @@
   border-spacing: 0 10px; /* Adds spacing between rows/cards */
 }
 
-/* Styling for each row to look like a card, ensuring no cut-off */
 .reportTable tr {
-  background-color: #ffffff; /* White background for all rows */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   border-radius: 8px; /* Rounds the corners */
   margin: 10px 0; /* Adds vertical space between cards */
@@ -20,29 +18,31 @@
   text-align: left; /* Aligns text to the left for all cells */
 }
 
-/* Ensure header cells fill the content area */
 .reportTable th {
-  background-color: #f9f9f9; /* Light grey background for header */
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
   font-weight: bold; /* Makes the header text bold */
 }
 
-/* Style for the first column to align text to the left */
+/* Alternating background colors for rows */
+.reportTable tr:nth-child(odd) td {
+  background-color: #f9f9f9; /* Light grey for odd rows */
+}
+
+.reportTable tr:nth-child(even) td {
+  background-color: #ffffff; /* White for even rows */
+}
+
 .reportTable .left {
   text-align: left;
 }
 
-/* Style for the second column to align text to the right */
 .reportTable .right {
   text-align: right;
 }
 
-/* Adjustments for emphasized rows */
 .subtotal, .total {
   font-style: italic;
   font-weight: bold;
   background: #d3d3d3; /* Light grey background for emphasis */
 }
-
-/* Since we are not using table layout, .left, .right, .indent, .total.transposed can be applied directly to td elements as needed */
