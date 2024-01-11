@@ -14,14 +14,10 @@
   font-family: sans-serif;
   font-size: 16px;
   z-index: 2;
-
-  /* Add customization here  */
 }
 
 #tooltip.hidden {
   display: none;
-
-  /* Add customization here  */
 }
 
 #tooltip p {
@@ -29,78 +25,55 @@
   font-family: sans-serif;
   font-size: 12px;
   line-height: 15px;
-
-  /* Add customization here  */
 }
 
 .reportTable {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
   font-size: 12px;
-  border: 1px solid #cccccc;
-  border-collapse: collapse;
-  border-spacing: 3px;
-
-  /* Add customization here  */
+  border-collapse: collapse; /* Borders removed */
 }
 
-.reportTable th {
-  color: #000000;
-  border: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc !important;
-  /* font-size: 10px;  */
-  /* height: 25px; */
-  padding: 20px;
-
-  /* Add customization here  */
-}
-
-.reportTable td {
+/* Remove borders from th and td */
+.reportTable th, .reportTable td {
   color: #000000;
   vertical-align: super;
-  padding: 5px;
-  /*background: #FFFFFF;*/
-  border: 1px solid #cccccc;
-  border-collapse: collapse;
+  padding: 20px; /* Adjusted padding for th */
+  border: none; /* Borders removed */
+}
 
-  /* Add customization here  */
+/* Alternating row colors */
+.reportTable tr:nth-child(odd) { /* Target odd rows */
+  background-color: #f9f9f9; /* Light grey for odd rows */
+}
+
+.reportTable tr:nth-child(even) { /* Target even rows */
+  background-color: #ffffff; /* White for even rows */
 }
 
 .left {
   text-align: left;
-
-  /* Add customization here  */
 }
 
 .right {
   text-align: right !important;
-
-  /* Add customization here  */
 }
 
 .indent {
   padding-left: 15px !important;
-
-  /* Add customization here  */
 }
 
 .subtotal {
   font-style: italic;
   font-weight: bold;
-  background: #d3d3d3;
-
-  /* Add customization here  */
+  background: #d3d3d3; /* Overridden background for subtotal rows */
 }
 
 .total {
-  border-top: 2px solid #000000 !important;
-  font-weight: bold !important;
-
-  /* Add customization here  */
+  font-weight: bold;
+  background: #d3d3d3; /* Overridden background for total rows */
+  border-top: none !important; /* Border top removed */
 }
 
 .total.transposed {
-  border-top: 0px !important;
-  background: #d3d3d3;
-
-  /* Add customization here  */
+  background: #d3d3d3; /* Ensure consistent background for transposed total rows */
 }
