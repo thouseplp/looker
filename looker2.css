@@ -20,9 +20,9 @@ https://raw.githack.com/
   border-radius: 8px; /* Rounds the corners */
 }
 
-/* Style for the first row with a specific background color */
+/* Updated style for the first row with no specific background color */
 .reportTable tr:first-child {
-  background-color: #DEF1F7; /* Light blue brand color for the background */
+  background-color: transparent; /* Remove background color */
   font-size: 14px; /* Slightly larger font size */
   font-weight: 500; /* Medium bold font */
 }
@@ -37,8 +37,8 @@ https://raw.githack.com/
   padding: 28px 20px; /* Increased padding for the header */
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
-  background-color: #ffffff; /* White background for header */
-  box-shadow: none; /* Ensuring the header has no shadow */
+  background-color: transparent; /* Remove background color */
+  box-shadow: none; /* Remove shadow */
 }
 
 /* Alternating background colors for rows */
