@@ -32,7 +32,7 @@
   padding: 24px 20px; /* Increased padding for the header */
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
-  background-color: #f9f9f9; /* Light grey background for header */
+  background-color: #ffffff; /* Light grey background for header */
 }
 
 /* Alternating background colors for rows */
@@ -50,7 +50,7 @@
 }
 
 .reportTable .right {
-  text-align: right;
+  text-align: center;
 }
 
 /* Styles for emphasized rows */
