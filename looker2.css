@@ -20,10 +20,8 @@ https://raw.githack.com/
   border-radius: 8px; /* Rounds the corners */
 }
 
-/* More specific style for the first row */
-.reportTable tbody tr:first-child, .reportTable thead tr {
-  background-color: transparent !important; /* Remove background color */
-  box-shadow: none !important; /* Remove shadow */
+/* Style for the first row */
+.reportTable tr:first-child {
   font-size: 14px; /* Slightly larger font size */
   font-weight: 500; /* Medium bold font */
 }
@@ -34,12 +32,13 @@ https://raw.githack.com/
   text-align: left; /* Aligns text to the left for all cells */
 }
 
+/* Specific style for header cells */
 .reportTable th {
   padding: 28px 20px; /* Increased padding for the header */
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
-  background-color: transparent !important; /* Remove background color */
-  box-shadow: none !important; /* Remove shadow */
+  background-color: transparent; /* Remove background color */
+  box-shadow: none; /* Remove shadow */
 }
 
 /* Alternating background colors for rows */
@@ -63,9 +62,6 @@ https://raw.githack.com/
 /* Styles for emphasized rows */
 .subtotal, .total {
   font-style: italic;
-  font-weight: bold;
-  background: #d3d3d3; /* Light grey background for emphasis */
-}
   font-weight: bold;
   background: #d3d3d3; /* Light grey background for emphasis */
 }
