@@ -18,7 +18,7 @@
 .reportTable tr:nth-child(3) {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
   font-size: 14px; /* Slightly larger font size */
-  font-weight: 600; /* Bolder font */
+  font-weight: 500; /* Bolder font */
   margin: 20px 0; /* Increased top and bottom margins */
 }
 
@@ -29,7 +29,7 @@
 }
 
 .reportTable th {
-  padding: 24px 20px; /* Increased padding for the header */
+  padding: 28px 20px; /* Increased padding for the header */
   border-top-left-radius: 8px; /* Rounds the top-left corner */
   border-top-right-radius: 8px; /* Rounds the top-right corner */
   background-color: #ffffff; /* Light grey background for header */
