@@ -13,12 +13,12 @@
 }
 
 /* Style for the first row only */
-.reportTable tr:nth-child(1) {
+.reportTable tr:first-child {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
   font-size: 14px; /* Slightly larger font size */
   font-weight: 500; /* Medium bold font */
   margin: 20px 0; /* Increased top and bottom margins */
-  background-color: #fff9db; /* Light yellow background for the top row */
+  background-color: #fffae6; /* Darker yellow background for the top row */
 }
 
 .reportTable td, .reportTable th {
@@ -35,11 +35,11 @@
 }
 
 /* Alternating background colors for rows */
-.reportTable tr:nth-child(odd) td {
+.reportTable tr:nth-child(odd) td:not(:first-child) {
   background-color: #f9f9f9; /* Light grey for odd rows */
 }
 
-.reportTable tr:nth-child(even) td {
+.reportTable tr:nth-child(even) td:not(:first-child) {
   background-color: #ffffff; /* White for even rows */
 }
 
