@@ -1,66 +1,48 @@
-/* CSS classes adjusted for a card-like appearance */
 .reportTable {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
   font-size: 12px;
-  margin-bottom: 16px; /* Adds space between each 'card' */
-  overflow: hidden; /* Ensures the content respects the border radius */
+  width: 100%; /* Ensures the table uses full available width */
+  border-collapse: separate; /* Ensures borders do not collapse */
+  border-spacing: 0 10px; /* Adds spacing between rows/cards */
 }
 
-/* Styling for each row to look like a card */
+/* Styling for each row to look like a card, ensuring no cut-off */
 .reportTable tr {
   background-color: #ffffff; /* White background for all rows */
-  border: none; /* Removes any borders */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   border-radius: 8px; /* Rounds the corners */
-  margin-bottom: 16px; /* Adds space between cards */
-  display: block; /* Allows the use of margin and radius */
   margin: 10px 0; /* Adds vertical space between cards */
 }
 
-/* Header cells within the row */
+.reportTable td, .reportTable th {
+  border: none; /* Removes any borders */
+  padding: 20px; /* Adds padding inside the cell */
+  text-align: left; /* Aligns text to the left for all cells */
+}
+
+/* Ensure header cells fill the content area */
 .reportTable th {
   background-color: #f9f9f9; /* Light grey background for header */
-  color: #000000;
-  text-align: left; /* Aligns text to the left */
-  padding: 20px; /* Adds padding inside the header */
-  border-bottom: 1px solid #ddd; /* Adds a separator */
+  border-top-left-radius: 8px; /* Rounds the top-left corner */
+  border-top-right-radius: 8px; /* Rounds the top-right corner */
+  font-weight: bold; /* Makes the header text bold */
 }
 
-/* Data cells within the row */
-.reportTable td {
-  vertical-align: middle; /* Centers content vertically */
-  padding: 20px; /* Adds padding inside the cell */
-  text-align: right; /* Aligns text to the right for the price */
+/* Style for the first column to align text to the left */
+.reportTable .left {
+  text-align: left;
 }
 
-/* Alternating row colors are not needed in this design, so they are removed. */
+/* Style for the second column to align text to the right */
+.reportTable .right {
+  text-align: right;
+}
 
-/* Adjusted class for emphasizing certain rows (if needed) */
+/* Adjustments for emphasized rows */
 .subtotal, .total {
   font-style: italic;
   font-weight: bold;
   background: #d3d3d3; /* Light grey background for emphasis */
-  display: block; /* Allows it to behave like a separate card */
-  margin: 10px 0; /* Adds space around the emphasized card */
-  border-radius: 8px; /* Rounds the corners */
 }
 
-/* Since each row is now a separate 'card', we no longer need these classes:
-   .left, .right, .indent, .total.transposed
-   If needed, you can add these styles directly to the corresponding th or td.
-*/
-
-/* Example of how to use the classes in HTML:
-<table class="reportTable">
-  <tr>
-    <th>Your Current Rank</th>
-    <td>@username</td>
-  </tr>
-  <tr>
-    <th></th>
-    <td>$1000</td>
-  </tr>
-  <!-- Repeat for other ranks -->
-</table>
-*/
-
+/* Since we are not using table layout, .left, .right, .indent, .total.transposed can be applied directly to td elements as needed */
